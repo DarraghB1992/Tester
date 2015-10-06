@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 100%;
+			
+			display: flex;
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0;
+
+		}
+				
+		 a{
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			}
+
+		.landing{
+			width: 80%;
+			font-family: roboto;
+			display: flex;
+			flex-flow: column nowrap;
+			align-items:center;
+			margin-right: auto;
+			margin-left: auto;
+						
+			
+
+		}
+
+		#landing-message{
+			font-size:2em;
+			text-align: center;
+			vertical-align: middle;
+
+		}
+
+		#landing-graphic img{
+			width: 100%;
+
+				
+
+		}
+		.deck{
+			width: 80%;
+			font-family: roboto;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content:center;
+			align-items:center;
+			margin-right: auto;
+			margin-left: auto;
+
+		}
+		.card{
+			background-color: white;
+			margin-bottom: 50px;
+			border:3px solid black;
+			
+		}
+		.card img{
+				width: 100%;
+
+			}
+		.card p{
+			font-family: dosis;
+			font-size: 22px
+				
+		}
+		.card h2{
+			font-size: 26px;
+			
+		}	
+
+		@media screen and (min-width: 700px){
+			nav{
+			/*Code goes here*/
+			font-family: roboto;
+			background-color: #eee;
+			margin: 30px auto;
+			width: 100%;
+			
+			display: flex;
+			flex-direction: row;
+			align-items:flex-start;
+			background-color: #F5D76E;
+			padding: 0;	
+
+			}
+			 a{
+			/*Code goes here*/
+			text-decoration: none;
+			color: white;
+			flex:1;
+			height: 30px;
+			font-family: Dosis;
+			padding:20px 20px 20px 20px;
+			text-align: center;
+			font-size: 2em;
+			border:none;
+			
+
+			}
+			#logoNav{
+			/*Code goes here*/
+			font-size: 2em;
+			font-weight: bold;
+			flex:3;
+			text-align: left;
+			}
+
+			.landing{
+			font-family: roboto;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content:center;
+			width: 100%;
+			
+			align-items:center;			
+			
+
+			}
+
+			#landing-message{
+				font-size:3em;	
+				
+
+			}
+
+			#landing-graphic img{
+				width: 100%;
+				
+			}
+			.deck{
+			width: 80%;
+			font-family: roboto;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content:space-between;
+			align-items:center;
+			margin-right: auto;
+			margin-left: auto;
+
+			
+
+			}
+			.card{
+				background-color: white;
+				margin-right: 50px;
+				flex:1;
+				border:3px solid black;
+				
+			}
+			.card img{
+					width: 100%;
+
+				}
+			.card p{
+				font-family: dosis;
+				font-size: 22px
+					
+			}
+			.card h2{
+				font-size: 26px;
+				
+			}
+		}
+		body{
+			background-color: #F5D76E;
+			font-color: white;
+			border-color: white;
+		}
+		nav a:hover{
+			background-color: red;
+			border-radius: 80px;
+			
+		}
+
+
+		</style>
+</head>
+<body>
+
+	<nav>
+		
+			<a id="logoNav">DB CREATIONS</a>
+			<a href="#">Home</a>
+			<a href="#">Projects</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#">Photos</a>
+		
+
+	</nav>
+	<div class="landing">
+		<div id="landing-message">
+			<h2>Make Creative,</h2>
+			<h2> Clever Fun Apps.</h2>
+			<h2> Simple</h2>
+		</div>
+		<div id="landing-graphic"><img src="img/laptop.png"></div>
+		
+	</div>
+
+	<section class="deck">
+		<div class="card">
+			<img src="img/graphic1.png" alt="Design pic">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career in ....
+			</p>
+		</div>
+		<div class="card">
+			<img src="img/graphic2.png" alt="Design pic">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career in ....</p>
+		</div>
+		<div class="card">
+			<img src="img/graphic3.png" alt="Design pic">
+			<h2>Web Info Sessions</h2>
+			<p>If you have questions about your career in ....</p>
+		</div>
+	</section>
+
+	
+
+</body>
+</html>
